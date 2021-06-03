@@ -66,6 +66,15 @@ $graphAppAccess = [Microsoft.Open.AzureAD.Model.RequiredResourceAccess]@{
         [Microsoft.Open.AzureAD.Model.ResourceAccess]@{
             Id = "7ab1d382-f21e-4acd-a863-ba3e13f7da61";
             Type = "Role"}
+        [Microsoft.Open.AzureAD.Model.ResourceAccess]@{
+            Id = "246dd0d5-5bd0-4def-940b-0421030a5b68";
+            Type = "Role"}
+        [Microsoft.Open.AzureAD.Model.ResourceAccess]@{
+            Id = "37730810-e9ba-4e46-b07e-8ca78d182097";
+            Type = "Role"}
+        [Microsoft.Open.AzureAD.Model.ResourceAccess]@{
+            Id = "230c1aed-a721-4c5d-9cb4-a90514e508ef";
+            Type = "Role"}         
 }
 
 $partnerCenterAppAccess = [Microsoft.Open.AzureAD.Model.RequiredResourceAccess]@{
