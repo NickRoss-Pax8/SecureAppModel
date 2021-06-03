@@ -11,15 +11,15 @@ Param
 $ErrorActionPreference = "Stop"
 
 # Check if the Azure AD PowerShell module has already been loaded.
-if ( ! ( Get-Module AzureAD ) ) {
+if ( ! ( Get-Module AzureADPreview ) ) {
     # Check if the Azure AD PowerShell module is installed.
-    if ( Get-Module -ListAvailable -Name AzureAD ) {
+    if ( Get-Module -ListAvailable -Name AzureADPreview ) {
         # The Azure AD PowerShell module is not load and it is installed. This module
         # must be loaded for other operations performed by this script.
         Write-Host -ForegroundColor Green "Loading the Azure AD PowerShell module..."
-        Import-Module AzureAD
+        Import-Module AzureADPreview
     } else {
-        Install-Module AzureAD
+        Install-Module AzureADPreview
     }
 }
 
